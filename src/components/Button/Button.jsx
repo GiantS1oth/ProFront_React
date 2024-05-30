@@ -1,14 +1,20 @@
+import { type } from "@testing-library/user-event/dist/type";
 import "./styles.css";
 
-function Button() {
-  const getButton = "Get";
-  const sendButton = "Send";
-  const isGetButton = true;
-  const buttonClass = "button-component";
+function Button({name, type = "button", onClick }) {
+  
 
   return (
-    <button className={buttonClass}>
-      {isGetButton ? getButton : sendButton}
+    <button
+      className="button"
+      type={type}
+      // onClick={() => {
+      //   alert("ButtonClick")
+      // }}
+      onClick={onClick}
+    
+    >
+      {name}
     </button>
   );
 }

@@ -1,0 +1,13 @@
+.counter-component{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  background: rgb(169, 184, 235);
+}
+
+.counter-result{
+  font-size: 24px;
+
+}
