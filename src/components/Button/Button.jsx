@@ -1,19 +1,13 @@
 import { type } from "@testing-library/user-event/dist/type";
 import "./styles.css";
 
-function Button({name, type = "button", onClick }) {
+function Button({ name, type}) {
   
 
   return (
     <button
       className="button"
-      type={type}
-      // onClick={() => {
-      //   alert("ButtonClick")
-      // }}
-      onClick={onClick}
-    
-    >
+      type={type}>
       {name}
     </button>
   );
